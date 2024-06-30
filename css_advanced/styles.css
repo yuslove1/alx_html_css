@@ -29,6 +29,7 @@ body {
     font-family: 'Source Sans Pro';
 	line-height: 1;
     width: 100%;
+    box-sizing: border-box;
 }
 ol, ul {
 	list-style: none;
@@ -161,23 +162,24 @@ nav ul li a{
     color: white;
     border: none;
     border-radius: 30px;
+    box-shadow: 0px 2px 20px 0px #00000080;
+
 }
 
 .pros h2{
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 40.22px;
-    margin:0 auto;
-    color: #C271FF;
-}
-
-.pros h2 span{
     font-size: 32px;
     font-weight: 200;
     line-height: 40.22px;
     text-align: center;
     color: white;
-    
+}
+
+#colored{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.22px;
+    margin:0 auto;
+    color: #C271FF;
 }
 
 .pros{
@@ -216,4 +218,278 @@ nav ul li a{
 
 .members div:nth-of-type(3) img {
     border-radius: 50%;
+}
+
+
+/* Quote section */
+
+.quote{
+    width: 100%;
+    background-color: #C271FF;
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 108px 0 124px;
+    flex: 1;
+    
+    /* padding: 108px 237px 124px 260px; */
+}
+
+.quote div:nth-child(1) {
+   margin-right: 53px ; 
+}
+
+.quote div:nth-child(2){
+    max-width: 730px;
+    color: white;
+}
+
+.quote blockquote{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33.6px;
+    text-align: left;
+    margin-bottom: 22px;
+}
+.quote h3{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-align: left;
+}
+.quote p{
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 33.6px;
+    text-align: left;
+}
+
+/* 87.106 Video-List section */
+
+
+
+.video-list{
+    max-width: 1228px;
+    /* max-width: 1200px; */
+    margin: 87px auto;
+}
+
+.video-list .videos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-list h2{
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40.22px;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+
+.video-item {
+    max-width: 255px;
+  }
+
+  /* .videos{
+    padding: 0 59px;
+  } */
+
+.video-thumbnail{
+    position: relative;
+}
+
+.video-thumbnail .play-button{
+    background: url('./images/play.png') no-repeat center;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    position: absolute;
+}
+
+.video-item h3{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px;
+    text-align: left;
+    margin: 18px 0 7.6px 13px;
+}
+.video-item p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #07162980;  
+    margin-left: 13px; 
+}
+
+.video-item .author{
+ display: flex;
+ align-items: center;
+}
+
+.author img{
+    max-width: 30px;
+    max-height: 30px;
+    margin: 13px;
+}
+
+.author h4{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #C271FF;
+}
+
+.video-item .rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 13px;
+    color: #C271FF;
+}
+
+.rating .stars{
+   display: flex;
+   
+}
+.rating div:last-child {
+   color: #D8D8D8;
+}
+
+/* part_3_free_membership section */
+
+.part-3{
+    background-color: #071629;
+    color: white;
+    padding-top: 70px ;
+    text-align: center;
+    width: 100%;
+}
+
+.part-3 .part3-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 164px;
+    /* border: 2px solid white; */
+}
+
+.part-3 h2{
+    margin-bottom: 58px;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40.22px;
+}
+
+.part3-content div{
+    /* border: 2px solid brown; */
+    max-width: 257px;
+}
+.part3-content div img{
+    margin: 0 auto;
+}
+.part3-content div h3{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    margin: 26px auto 13px;
+}
+.part3-content div p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 0 15px;
+    /* text-align: center; */
+
+}
+
+.part-3 button {
+    margin: 85px auto 52px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.6px;
+    padding: 18px;
+    text-align: center;
+    background-color:#C271FF;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 2px 20px 0px #00000080;
+
+}
+
+
+/* part4: FAQ section */
+
+.part4-faq{
+    margin: 67px auto 84px;
+    max-width: 920px;
+    /* border: 2px solid black; */
+}
+.part4-faq h2{
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 75.42px;
+    text-align: center;
+    margin-bottom: 74px;
+}
+.faq-row{
+    display: flex;
+    justify-content: space-between;
+}
+.faq-row .faq-item{
+    max-width: 350px;
+    /* border: 2px solid black; */
+    margin-bottom: 74px;
+}
+
+.faq-item h3{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px;
+    color: #071629;
+    margin-bottom: 30px;
+}
+.faq-item p{
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color:#07162980;
+}
+
+
+/* Part5_5_footer */
+
+footer section{
+    width: 100%;
+    background-color: #071629;
+}
+
+section .footlogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 95px 240px 0 165px;
+}
+
+.social i{
+    width: 30px;
+    height: 30px;
+    color: white;
+    margin-left: 20px;
+}
+
+footer section p{
+font-size: 12px;
+font-weight: 400;
+line-height: 15.08px;
+text-align: center;
+color: #FFFFFF;
+padding: 70px 0 39px 0;
 }
