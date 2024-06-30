@@ -1,0 +1,219 @@
+/* meyerweb css reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    font-family: 'Source Sans Pro';
+	line-height: 1;
+    width: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+
+/* My styles */
+  @font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./fonts/source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./fonts/source-sans-pro/SourceSansPro-Light.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./fonts/source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./fonts/source-sans-pro/SourceSansPro-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+
+
+header{
+    /* background-color: transparent; */
+    position: absolute;
+    width: 100%;
+    top: 35px;
+    z-index: 10;
+}
+
+nav{
+    max-width: 80% ;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+nav ul{
+    width: 40%;
+    max-width: 234px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem ;
+    font-weight: 700;
+}
+
+
+.main_part{
+    background-image: url(../css_advanced/images/Object.png) ;
+    background-position: center top;
+    background-size: cover;
+    color: white;
+    position: relative;
+    padding-top: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+
+
+}
+
+.main_part div{
+    text-align: center;
+}
+
+.main_part div h1{
+    font-size: 7.5rem;
+    font-weight: 700;
+    line-height: 9.43rem;
+}
+.main_part div span{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px; 
+}
+
+.main_part div span:nth-last-of-type(2){
+    margin: 0 56px;
+}
+
+#reg-btn{
+    display: block;
+    margin: 36px auto 168px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.6px;
+    padding: 18px;
+    text-align: center;
+    background-color:#C271FF;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+.pros h2{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.22px;
+    margin:0 auto;
+    color: #C271FF;
+}
+
+.pros h2 span{
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 40.22px;
+    text-align: center;
+    color: white;
+    
+}
+
+.pros{
+    width: 100%;
+    margin: 0 auto;
+}
+.pros .members{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    margin: 87px auto 98px;
+}
+
+.members div img{
+    margin: 0 auto;
+}
+
+.members div h3{
+    margin: 10px 0 2px ;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 27px;
+    text-align: center;
+}
+.members div p{
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    
+}
+
+.members div:nth-of-type(3) img {
+    border-radius: 50%;
+}
