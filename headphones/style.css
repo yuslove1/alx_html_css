@@ -255,7 +255,7 @@ nav{
   justify-content: space-between
 }
 
-#card-icon-e90e:before {
+#card-icon-e90e::before{
     content: "\e90e";
     font-family: 'holberton_school-icon';
   }
@@ -287,10 +287,38 @@ nav{
     font-weight: 400;
     line-height: 26px;
   }
-  .card span{
+  .card i{
+    display: block;
     color: #FF6565;
     font-size: 5em;
+    /* transition: transform 0.1s ease-in-out ; */
   }
+
+  .card-container .card:hover i {
+    animation: icon-ani 2s ease-in-out infinite alternate;
+    font-weight: 700;
+   
+    /* animation-name: icon-ani;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;*/
+
+    /* animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate; */
+    /* color: white; */
+    /* color: rgb(230, 116, 116); */
+}
+
+@keyframes icon-ani {
+    0%{
+      transform: translateY(20px);
+    }
+    100%{
+      transform: translateY(-50px);
+    }
+    }
 
 
 
@@ -322,16 +350,35 @@ nav{
     margin: 0 auto;
 }
 
+@keyframes poly-ani {
+  0%{
+    transform: scale(-1);
+  }
+  50%{
+    transform: translateX(-20px);
+  }
+  100%{
+    transform: translateX(20px);
+  }
+  
+}
+
 .poly{
   width: 190px;
   height: 190px;
   position: relative;
+
 
   /* shape style using clip-path property */
   background-color: #FF6565;
   clip-path: polygon(52% 0, 51% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%); /*https://bennettfeely.com/clippy/ */
 
 }
+
+.poly-container:hover .poly{
+    animation: poly-ani 4s ease-in-out infinite alternate;
+}
+
   
    .poly img{
     max-width: 100%;
@@ -554,4 +601,5 @@ footer .social{
 }
   }
 
+ 
 
