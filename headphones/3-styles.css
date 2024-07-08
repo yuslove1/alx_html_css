@@ -1,0 +1,479 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Source Sans Pro';
+    color: white;
+     /* max-width: 1000px; */
+} 
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+/* fonts */
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./fonts/source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./fonts/source-sans-pro/SourceSansPro-Light.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./fonts/source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./fonts/source-sans-pro/SourceSansPro-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  /* ====================holberton-icon================================ */
+  @font-face {
+    font-family: 'holberton_school-icon';
+    src:  url('/fonts/holberton_school-icon.eot');
+    src:  url('/fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+      url('/fonts/holberton_school-icon.ttf') format('truetype'),
+      url('/fonts/holberton_school-icon.woff') format('woff'),
+      url('/fonts/holberton_school-icon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'holberton_school-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .hero-section{
+    width: 100%;
+    background-image: url(/images/headphones_hero_1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+ }
+
+
+.hero-section div{
+   max-width: 637px ;
+   padding-top: 372px;
+   padding-bottom: 115px;
+   margin: 0 auto;
+}
+.hero-section div h1{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.22px;  
+}
+.hero-section div h2{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px;
+    margin-bottom: 40px;
+}
+.hero-section div p{
+    margin-top: 65px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+
+
+}
+
+/* ----------------------------------------------------------------------- */
+#callToAction-btn{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.6px;
+    color: inherit;
+
+    padding: 18px;
+    text-align: center;
+    background-color:#FF6565;
+
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 2px 20px 0px #00000080;
+}
+
+button:active, button:hover{
+    opacity: 0.9;
+}
+
+a:hover, a:active{
+    color: #FF6565;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    top: 29px;
+}
+
+.logo img{
+    max-width: 161px;
+    max-height: 32px;
+}
+
+.menu-toggle, .menu-icon{
+    display: none;
+}
+nav{
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.menu{
+    display: flex;
+    max-width: 255px;
+    gap: 41px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15.08px;  
+
+}
+
+
+
+
+
+/* part-1(what-we-do section) */
+
+.what-we-do{
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+.what-we-do .first-part{
+    max-width: 637px;
+    padding-top: 110px;
+    margin: 0 auto;
+}
+
+.first-part h1{
+    font-size: 32px;
+    line-height: 37.5px;
+    margin-bottom: 40px;
+}
+.first-part p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    /* color: #071629; */
+}
+
+
+
+:root{
+    --max-width: 1000px;
+    --text-align: center;
+    --margin : 97px auto 110px;
+    --display : flex;
+}
+
+.card-container{
+  max-width: var(--max-width);
+  text-align: center;
+  margin : var(--margin);
+  display : flex;
+  justify-content: space-between
+}
+
+#card-icon-e90e::before{
+    content: "\e90e";
+    font-family: 'holberton_school-icon';
+  }
+#card-icon-e910:before {
+    content: "\e910";
+    font-family: 'holberton_school-icon';
+  }
+#card-icon-e90d:before {
+    content: "\e90d";
+    font-family: 'holberton_school-icon';
+  }
+#card-icon-e909:before {
+    content: "\e909";
+    font-family: 'holberton_school-icon';
+  }
+
+  .card-container .card{
+    max-width: 207px;
+    max-height: 190px;
+  }
+  .card-container .card h2{
+    font-size: 18px;
+    line-height: 26px;
+    margin: 13px 0;
+
+  }
+  .card-container .card p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .card i{
+    display: block;
+    color: #FF6565;
+    font-size: 5em;
+    /* transition: transform 0.1s ease-in-out ; */
+  }
+
+  .part-3-dark{
+    width: 100%;
+    background-image: url(/images/headphones_hero_2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color : white;
+    }
+  
+    .poly-container{
+      max-width: var(--max-width);
+      text-align: center;
+      margin : 56px auto 0;
+      padding-bottom: 79px;
+      display : flex;
+      justify-content: space-between
+    }
+  
+    .part-3-dark .first-part{
+      max-width: 637px;
+      padding-top: 110px;
+      margin: 0 auto;
+  }
+  
+  .poly{
+    width: 190px;
+    height: 190px;
+    position: relative;
+  }
+
+  .poly img{
+    max-width: 100%;
+  }
+  #percent{
+    position: absolute;
+    top: 35%;
+    left: 40px;
+  }
+
+  #percent h2{
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 20px;
+    }
+  
+    #percent p{
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px;
+    }
+
+    /* Contact-us section */
+
+    .contact-us .form-container{
+        max-width: 335px;
+        margin: 110px auto 130px ;
+        color: #071629;
+        text-align: center;
+  
+  
+      }
+  
+      .form-container h2{
+        font-size: 32px;
+        line-height: 37.5px;
+        text-align: center;
+        margin-bottom: 56px;
+      }
+  
+  .contact-us input::placeholder{
+        font-family: 'Source Sans Pro';
+        color: #071629;
+        font-size: 14px;
+        line-height: 16.41px;
+        margin-bottom:  10px ;
+        font-weight: 400;
+  }
+  
+      .contact-us input{
+        width: 100%;
+        outline: 0;
+        border: 0;
+        margin-bottom: 10px;
+  
+        /* border: 0; */
+        /* border-bottom: 2px solid rgba(0, 0, 0, 17.45); */
+      
+      }
+  .form-group{
+    margin-bottom: 45px;
+    border-bottom: 1px solid rgba(84, 82, 82, 0.48);
+  }
+  
+  .form-group:last-of-type {
+    margin-bottom: 56px;
+  }
+  
+  .contact-us #callToAction-btn{
+    color: white;
+    box-shadow: none;
+  }   
+
+  @media (max-width:480px) {
+
+    /* hero/header section */
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .menu-icon{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        margin-left: 20px;
+    }
+
+    .menu-icon::before {
+        content: "\e911";
+        font-family: 'holberton_school-icon';
+    }
+
+    .menu{
+        display: none;
+        flex-direction: column;
+        gap: 0px
+    }
+    .menu li{
+        margin-top: 20px
+    }
+
+    .menu-toggle:checked ~ .menu {
+        display: block;
+
+    }
+    .menu-toggle:checked + .menu-icon::before {
+        content: "X";
+        font-family: inherit;
+    }
+
+    /* what-we-do section */
+
+    .card-container, .poly-container{
+        max-width: 207px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .card-container .card{
+      margin-bottom: 96px;
+    }
+    .card-container .card:last-child{
+      margin-bottom: 0;
+    }
+
+    /* Our result-section */
+
+    .poly-container .poly{
+        margin-bottom: 96px;
+      }
+      .poly-container .poly:last-child{
+        margin-bottom: 0;
+      }
+}
+
+@media (min-width: 480px) and (max-width:768px) {
+    .card-container, .poly-container{
+        max-width: 472px;
+        flex-wrap: wrap;
+        margin: 96px auto 110px;
+    }
+
+
+    .card:nth-of-type(1), .card:nth-of-type(2){
+        margin-bottom: 96px ;
+    }
+
+    .poly:nth-of-type(1), .poly:nth-of-type(2){
+    margin-bottom: 42px;
+    }
+  }
