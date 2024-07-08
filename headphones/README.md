@@ -11,12 +11,10 @@ Requirements:
 - Ensure the web page is fully responsive and matches the design in the provided screens
 
 Design Files:
-You can find the design screens here: [insert link or attachment]
+You can find the design screens here: https://www.figma.com/design/TwFqqWGYvNYvxZxhdWXv4H/Holberton-School---Headphone-company?node-id=0-1&t=zsYFq5Wa3Q9MEl4n-1
 
 Deliverables:
 
-- A single HTML file (index.html)
-- A single CSS file (style.css)
 - The web page should match the design in the provided screens
 - The web page should be fully responsive and accessible
 
